@@ -1,0 +1,33 @@
+ANALISIS DE DATOS: (humilde) GUIA DE REFERENCIA
+
+PARTE I
+
+    Establecer objetivos
+    Completar la definición de los datos/Rellenar fichas datasets
+    Tipificar los datos
+    Priorizar variables
+
+PARTE II
+4. Aplicar tendencia central a todas las variables
+5. Analizar las frecuencias de las variables categóricas: Gráficos de barras
+6. Analizar las medidas de posición y los rangos de las variables numéricas: Graficos de Caja
+7. Analizar las medidas de dispersión de las variables numéricas
+8. Analizar las distribuciones de las variables numéricas: Histogramas y funciones estimadas de densidad (combinados)
+9. Analizar las anomalías o outliers: confrontación de histogramas y gráficos de cajas. Umbrales (2-3 desviaciones estándar, 4.5 en tamaño "bigotes")
+10. Trata los outliers: separa en dos, elimina, crea una categoría especial...
+
+PARTE III
+11. Revisa prioridades, preguntas y notas hasta el momento
+12. Preparara el analisis bivariante en función de la revisión anterior.
+13. Empieza por categóricas importantes/target: combinalas con categóricas y numéricas
+14. Sigue con numéricas importantes/target
+15. Analiza las parejas de variables que necesites para contestar tus preguntas
+15.1 Es directo así que: Matriz de correlación, heatmap y pairplot
+16. Recapitula: Clasifica ya tus hallazgos en posibles mensajes, elementos a profundizar, cosas interesantes pero no importantes (descártalas). Añade las preguntas contestadas y la lista de preguntas sin contestar.
+
+PARTE IV
+17. Intenta resolver todas las preguntas pendientes
+18. Si necesitas análisis más complicados (3 o más variables): Planifica muy bien que grupos
+19. Aplica lo visto en estas sesiones, tendrás que probar variaciones hasta llegar a encontrar el punto adecuado.
+20. Acaba el análisis: Cierras las preguntas pendientes, lo que te quede por trabajar -> Lineas de trabajo futuro.
+
