@@ -40,7 +40,7 @@ def pinta_distribucion_categoricas(df, columnas_categoricas, relativa=False, mos
     plt.show()
 
 
-def plot_categorical_relationship_fin(df, cat_col1, cat_col2, relative_freq=False, show_values=False, size_group = 5):
+def plot_categorical_relationship_fin(df, cat_col1, cat_col2, relative_freq=False, show_values=False, size_group = 5, giro = 45):
     # Prepara los datos
     count_data = df.groupby([cat_col1, cat_col2]).size().reset_index(name='count')
     total_counts = df[cat_col1].value_counts()
@@ -67,7 +67,7 @@ def plot_categorical_relationship_fin(df, cat_col1, cat_col2, relative_freq=Fals
             plt.title(f'Relación entre {cat_col1} y {cat_col2} - Grupo {i + 1}')
             plt.xlabel(cat_col1)
             plt.ylabel('Frecuencia' if relative_freq else 'Conteo')
-            plt.xticks(rotation=45)
+            plt.xticks(rotation=giro)
 
             # Mostrar valores en el gráfico
             if show_values:
@@ -87,7 +87,7 @@ def plot_categorical_relationship_fin(df, cat_col1, cat_col2, relative_freq=Fals
         plt.title(f'Relación entre {cat_col1} y {cat_col2}')
         plt.xlabel(cat_col1)
         plt.ylabel('Frecuencia' if relative_freq else 'Conteo')
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=giro)
 
         # Mostrar valores en el gráfico
         if show_values:
